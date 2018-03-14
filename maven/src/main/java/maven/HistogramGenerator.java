@@ -19,9 +19,13 @@ public class HistogramGenerator {
 		h.generateChart(h.readFile(args[0]));
 	}
 	
-	/*ReadFiles reads the lines of a text file, parses the grades, 
+	/* ReadFiles reads the lines of a text file, parses the grades, 
 	 * adds them to an array called frequencies and returns the array
-	 * */
+	 * 
+	 * @author giorgosmav21
+	 * @version 1.0
+	 * @since 2018-3-13
+	 **/
 	public int[] readFile(String path) {
 		String line;
 		int frequencies[] = new int[11];
