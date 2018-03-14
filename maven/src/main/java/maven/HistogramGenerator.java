@@ -8,10 +8,10 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
-/* Histogram Generator contains a method which reads the grades from a text and
+/** Histogram Generator contains a method which reads the grades from a text and
  * a method which generates an histogram based on these grades. 
  * It also contains main method
- *  */
+ */
 public class HistogramGenerator {
 	
 	public static void main(String[] args) {
@@ -19,13 +19,13 @@ public class HistogramGenerator {
 		h.generateChart(h.readFile(args[0]));
 	}
 	
-	/* ReadFiles reads the lines of a text file, parses the grades, 
+	/** ReadFiles reads the lines of a text file, parses the grades, 
 	 * adds them to an array called frequencies and returns the array
 	 * 
 	 * @author giorgosmav21
 	 * @version 1.0
 	 * @since 2018-3-13
-	 **/
+	 */
 	public int[] readFile(String path) {
 		String line;
 		int frequencies[] = new int[11];
@@ -57,8 +57,8 @@ public class HistogramGenerator {
 	    return frequencies;
 		
 	}
-	/*GenerateChart receive an array of grades' frequencies and creates the histogram
-	 * */
+	/**GenerateChart receive an array of grades' frequencies and creates the histogram
+	 */
 	public void generateChart(int[] dataValues) {
 		
 		XYSeriesCollection dataset = new XYSeriesCollection();
